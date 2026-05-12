@@ -22,6 +22,5 @@ echo "Generating the interactive OpenAPI HTML documentation ..."
 python3 openapi-to-html.py
 
 # convert MarkDown (MD) to HTML
-echo "Converting MarkDown to HTML ..."
-pandoc api-doc.md -so api-doc.html
-
+echo "Converting MarkDown to HTML with custom CSS ..."
+pandoc api-doc.md -so api-doc.html -H api-doc.css

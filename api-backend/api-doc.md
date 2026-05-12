@@ -1,29 +1,4 @@
 ---
-header-includes:
-  - |
-    <style>
-    body {
-        max-width: 90% !important;
-        margin: 2em auto !important;
-        padding: 0 40px !important;
-    }
-    table tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-    table {
-        width: 100%;            /* Forces the table to span the full container width */
-        display: table;        /* Keeps standard table behavior */
-        border-collapse: collapse;
-    }
-
-    /* Handles overflow if the table is too wide for the screen */
-    div.table-wrapper {
-        overflow-x: auto;      /* Adds a horizontal scrollbar if needed */
-        width: 100%;
-    }
-    </style>
----
-
 # API Documentation
 This work is licensed under a [Creative Commons Attribution-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/).
 
