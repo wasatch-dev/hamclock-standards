@@ -193,5 +193,5 @@ This work is licensed under a [Creative Commons Attribution-NoDerivatives 4.0 In
 | /ham/HamClock/lightning/strikes.pl | | | | | | | |
 |  | lat | DD.ddddd | -90 | 90 | undef |  | |
 |  | lon | DD.dddd | -180 | 180 | undef |  |  |
-|  | radius | km | 0 | 41000 | 500 | |  |
-|  | maxage | s | 0 | server maximum | 900 |  | |
+|  | radius | km | 0 | 41000 | undef | |  |
+|  | maxage | s | 0 | server maximum | 600 |  | |
