@@ -33,8 +33,8 @@ def generate_openapi(md_file, output_file):
             if line.find(':---') != -1:
                 continue
             parts = [p.strip() for p in line.split('|')[1:-1]]
-            if len(parts) == 8:
-                path, arg, units, min_, max_, default, required, samples = parts
+            if len(parts) == 9:
+                path, arg, units, min_, max_, default, required, samples, prop = parts
                 entries.append({
                     'path': path,
                     'arg': arg,
@@ -43,20 +43,25 @@ def generate_openapi(md_file, output_file):
                     'max': max_,
                     'default': default,
                     'required': required,
-                    'samples': samples
+                    'samples': samples,
+                    'proposal': prop
                 })
 
     # Group by path
     paths = {}
     current_path = None
     params = []
+    path_proposals = {}
+
     for entry in entries:
         if entry['path']:
             if current_path:
-                if params:
-                    paths[current_path] = {'parameters': params}
+                paths[current_path] = {'parameters': params, 'proposal': path_proposals.get(current_path, '')}
                 params = []
             current_path = entry['path']
+            if entry['proposal']:
+                path_proposals[current_path] = entry['proposal']
+
         if entry['arg']:
             # Infer type
             sample_vals = entry['samples'].split(', ') if entry['samples'] else []
@@ -75,8 +80,8 @@ def generate_openapi(md_file, output_file):
                 param['schema']['default'] = entry['default']
             params.append(param)
 
-    if current_path and params:
-        paths[current_path] = {'parameters': params}
+    if current_path:
+        paths[current_path] = {'parameters': params, 'proposal': path_proposals.get(current_path, '')}
 
     # Build OpenAPI structure
     openapi_spec = {
@@ -115,8 +120,26 @@ def generate_openapi(md_file, output_file):
 
     # Add paths
     for path, data in paths.items():
+        # Determine tag based on path
+        tag = 'Miscellaneous'
+        if '/SDO/' in path: tag = 'SDO Images'
+        elif '/maps/' in path: tag = 'Maps'
+        elif any(x in path for x in ['/solar-', '/Bz/', '/NOAASpaceWX/', '/ssn/', '/xray/', '/solar-wind/']): tag = 'Solar Weather'
+        elif '/geomag/' in path or '/dst/' in path: tag = 'Geomagnetic'
+        elif any(x in path for x in ['fetchVOACAP', 'fetchBandConditions']): tag = 'Propagation'
+        elif any(x in path for x in ['Reporter', 'RBN', 'WSPR']): tag = 'Reporters'
+        elif '/wx' in path or '/worldwx/' in path: tag = 'Weather'
+        elif '/esats/' in path: tag = 'Satellites'
+
+        description = 'Standard HamClock API endpoint.'
+        if data['proposal']:
+            description = f"Proposal implementation: {data['proposal']}."
+
         openapi_spec['paths'][path] = {
             'get': {
+                'tags': [tag],
+                'summary': path.split('/')[-1],
+                'description': description,
                 'parameters': data['parameters'],
                 'responses': {
                     '200': {
@@ -128,22 +151,6 @@ def generate_openapi(md_file, output_file):
                 }
             }
         }
-
-    # For paths without params, add basic
-    for entry in entries:
-        if entry['path'] and not entry['arg'] and entry['path'] not in openapi_spec['paths']:
-            openapi_spec['paths'][entry['path']] = {
-                'get': {
-                    'responses': {
-                        '200': {
-                            'description': 'Success',
-                            'content': {
-                                'text/plain': {'schema': {'type': 'string'}}
-                            }
-                        }
-                    }
-                }
-            }
 
     with open(output_file, 'w') as f:
         yaml.dump(openapi_spec, f, default_flow_style=False, sort_keys=False)

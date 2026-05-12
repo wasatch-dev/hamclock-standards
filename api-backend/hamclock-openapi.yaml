@@ -37,8 +37,516 @@ tags:
 - name: Miscellaneous
   description: Contests, DXpeditions, city data, version info, and more
 paths:
+  /ham/HamClock/Bz/Bz.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: Bz.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/NOAASpaceWX/noaaswx.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: noaaswx.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/NOAASpaceWX/rank2_coeffs.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: rank2_coeffs.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/ONTA/onta.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: onta.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/RSS/web15rss.pl:
+    get:
+      tags:
+      - Miscellaneous
+      summary: web15rss.pl
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_131_170.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_131_170.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_131_340.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_131_340.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_131_680.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_131_680.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_193_170.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_193_170.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_193_340.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_193_340.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_193_680.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_193_680.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_170.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_170.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_193_171_170.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_193_171_170.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_193_171_340.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_193_171_340.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_193_171_510.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_193_171_510.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_193_171_680.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_193_171_680.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_340.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_340.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_211_680.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_211_680.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_304_170.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_304_170.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_304_340.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_304_340.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/f_304_680.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: f_304_680.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_170_HMIB.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_170_HMIB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_170_HMIIC.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_170_HMIIC.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_340_HMIB.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_340_HMIB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_340_HMIIC.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_340_HMIIC.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_510_HMIIC.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_510_HMIIC.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_680_HMIB.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_680_HMIB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/SDO/latest_680_HMIIC.bmp.z:
+    get:
+      tags:
+      - SDO Images
+      summary: latest_680_HMIIC.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/aurora/aurora.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: aurora.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/cities2.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: cities2.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/contests/contests311.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: contests311.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/cty/cty_wt_mod-ll-dxcc.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: cty_wt_mod-ll-dxcc.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/drap/stats.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: stats.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/dst/dst.txt:
+    get:
+      tags:
+      - Geomagnetic
+      summary: dst.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/dxpeds/dxpeditions.txt:
+    get:
+      tags:
+      - Miscellaneous
+      summary: dxpeditions.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/esats/esats.txt:
+    get:
+      tags:
+      - Satellites
+      summary: esats.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
   /ham/HamClock/fetchBandConditions.pl:
     get:
+      tags:
+      - Propagation
+      summary: fetchBandConditions.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: MODE
         in: query
@@ -104,6 +612,10 @@ paths:
                 type: string
   /ham/HamClock/fetchPSKReporter.pl:
     get:
+      tags:
+      - Reporters
+      summary: fetchPSKReporter.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: bycall
         in: query
@@ -139,13 +651,32 @@ paths:
                 type: string
   /ham/HamClock/fetchRBN.pl:
     get:
+      tags:
+      - Reporters
+      summary: fetchRBN.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: maxage
         in: query
         schema:
           type: number
-        required: false
+        required: true
       - name: ofcall
+        in: query
+        schema:
+          type: string
+        required: false
+      - name: bycall
+        in: query
+        schema:
+          type: string
+        required: false
+      - name: bygrid
+        in: query
+        schema:
+          type: string
+        required: false
+      - name: ofgrid
         in: query
         schema:
           type: string
@@ -159,6 +690,10 @@ paths:
                 type: string
   /ham/HamClock/fetchVOACAP-MUF.pl:
     get:
+      tags:
+      - Propagation
+      summary: fetchVOACAP-MUF.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: HEIGHT
         in: query
@@ -229,6 +764,10 @@ paths:
                 type: string
   /ham/HamClock/fetchVOACAP-TOA.pl:
     get:
+      tags:
+      - Propagation
+      summary: fetchVOACAP-TOA.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: HEIGHT
         in: query
@@ -299,6 +838,10 @@ paths:
                 type: string
   /ham/HamClock/fetchVOACAPArea.pl:
     get:
+      tags:
+      - Propagation
+      summary: fetchVOACAPArea.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: HEIGHT
         in: query
@@ -369,6 +912,10 @@ paths:
                 type: string
   /ham/HamClock/fetchWSPR.pl:
     get:
+      tags:
+      - Reporters
+      summary: fetchWSPR.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: bycall
         in: query
@@ -402,8 +949,1132 @@ paths:
             text/plain:
               schema:
                 type: string
+  /ham/HamClock/geomag/kindex.txt:
+    get:
+      tags:
+      - Geomagnetic
+      summary: kindex.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1320x660-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1320x660-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-1980x990-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-1980x990-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-2640x1320-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-2640x1320-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-2640x1320-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-2640x1320-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-2640x1320-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-2640x1320-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-2640x1320-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-2640x1320-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-2640x1320-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-2640x1320-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-2640x1320-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-2640x1320-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-3960x1980-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-3960x1980-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-3960x1980-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-3960x1980-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-3960x1980-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-3960x1980-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-5940x2970-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-5940x2970-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-5940x2970-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-5940x2970-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-5940x2970-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-5940x2970-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-5940x2970-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-5940x2970-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-D-660x330-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-D-660x330-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1320x660-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1320x660-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-1980x990-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-1980x990-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-2640x1320-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-2640x1320-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-2640x1320-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-2640x1320-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-2640x1320-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-2640x1320-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-2640x1320-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-2640x1320-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-2640x1320-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-2640x1320-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-2640x1320-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-2640x1320-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-3960x1980-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-3960x1980-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-3960x1980-Terrain.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-3960x1980-Terrain.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-3960x1980-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-3960x1980-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-5940x2970-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-5940x2970-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-5940x2970-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-5940x2970-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-5940x2970-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-5940x2970-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-5940x2970-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-5940x2970-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-Aurora.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-Aurora.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-Clouds.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-Clouds.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-Countries.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-Countries.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-DRAP-S.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-DRAP-S.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-MUF-RT.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-MUF-RT.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-Wx-in.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-Wx-in.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/maps/map-N-660x330-Wx-mB.bmp.z:
+    get:
+      tags:
+      - Maps
+      summary: map-N-660x330-Wx-mB.bmp.z
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/solar-flux/solarflux-99.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: solarflux-99.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/solar-flux/solarflux-history.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: solarflux-history.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/solar-wind/swind-24hr.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: swind-24hr.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/ssn/ssn-31.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: ssn-31.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/ssn/ssn-history.txt:
+    get:
+      tags:
+      - Solar Weather
+      summary: ssn-history.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/version.pl:
+    get:
+      tags:
+      - Miscellaneous
+      summary: version.pl
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/worldwx/wx.txt:
+    get:
+      tags:
+      - Weather
+      summary: wx.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
   /ham/HamClock/wx.pl:
     get:
+      tags:
+      - Weather
+      summary: wx.pl
+      description: Standard HamClock API endpoint.
       parameters:
       - name: is_de
         in: query
@@ -427,1052 +2098,51 @@ paths:
             text/plain:
               schema:
                 type: string
-  /ham/HamClock/Bz/Bz.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/NOAASpaceWX/noaaswx.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/NOAASpaceWX/rank2_coeffs.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/ONTA/onta.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/RSS/web15rss.pl:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_131_170.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_131_340.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_131_680.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_193_170.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_193_340.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_193_680.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_170.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_193_171_170.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_193_171_340.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_193_171_510.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_193_171_680.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_340.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_211_680.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_304_170.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_304_340.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/f_304_680.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_170_HMIB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_170_HMIIC.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_340_HMIB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_340_HMIIC.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_510_HMIIC.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_680_HMIB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/SDO/latest_680_HMIIC.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/aurora/aurora.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/cities2.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/contests/contests311.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/cty/cty_wt_mod-ll-dxcc.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/drap/stats.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/dst/dst.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/dxpeds/dxpeditions.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/esats/esats.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/geomag/kindex.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1320x660-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-1980x990-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-2640x1320-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-2640x1320-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-2640x1320-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-2640x1320-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-2640x1320-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-2640x1320-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-3960x1980-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-3960x1980-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-3960x1980-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-5940x2970-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-5940x2970-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-5940x2970-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-5940x2970-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-D-660x330-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1320x660-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-1980x990-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-2640x1320-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-2640x1320-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-2640x1320-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-2640x1320-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-2640x1320-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-2640x1320-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-3960x1980-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-3960x1980-Terrain.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-3960x1980-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-5940x2970-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-5940x2970-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-5940x2970-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-5940x2970-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-Aurora.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-Clouds.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-Countries.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-DRAP-S.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-MUF-RT.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-Wx-in.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/maps/map-N-660x330-Wx-mB.bmp.z:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/solar-flux/solarflux-99.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/solar-flux/solarflux-history.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/solar-wind/swind-24hr.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/ssn/ssn-31.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/ssn/ssn-history.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/version.pl:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
-  /ham/HamClock/worldwx/wx.txt:
-    get:
-      responses:
-        '200':
-          description: Success
-          content:
-            text/plain:
-              schema:
-                type: string
   /ham/HamClock/xray/xray.txt:
     get:
+      tags:
+      - Solar Weather
+      summary: xray.txt
+      description: Standard HamClock API endpoint.
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                type: string
+  /ham/HamClock/lightning/strikes.pl:
+    get:
+      tags:
+      - Miscellaneous
+      summary: strikes.pl
+      description: 'Proposal implementation: 003.'
+      parameters:
+      - name: lat
+        in: query
+        schema:
+          type: string
+          default: undef
+        required: false
+      - name: lon
+        in: query
+        schema:
+          type: string
+          default: undef
+        required: false
+      - name: radius
+        in: query
+        schema:
+          type: string
+          default: undef
+        required: false
+      - name: maxage
+        in: query
+        schema:
+          type: string
+          default: '600'
+        required: false
       responses:
         '200':
           description: Success

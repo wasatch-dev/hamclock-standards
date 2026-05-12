@@ -34,8 +34,8 @@ def analyze_md(filename):
                     continue  # skip the separator row
                 # Parse table row
                 parts = [p.strip() for p in line.split('|')[1:-1]]  # skip first and last empty
-                if len(parts) == 8:
-                    path, arg, units, min_, max_, default, required, samples = parts
+                if len(parts) == 9:
+                    path, arg, units, min_, max_, default, required, samples, proposal = parts
                     entries.append({
                         'path': path,
                         'arg': arg,
@@ -44,7 +44,8 @@ def analyze_md(filename):
                         'max': max_,
                         'default': default,
                         'required': required,
-                        'samples': samples
+                        'samples': samples,
+                        'proposal': proposal
                     })
 
         # Print License Header
@@ -53,7 +54,7 @@ def analyze_md(filename):
         print("\n---\n")
 
         # Print the Report Header
-        header = f"{'path':<30} | {'Argument':<20} | {'Units':<8} | {'Min':<6} | {'Max':<6} | {'Default':<8} | {'required':<9} | {'sample values'}"
+        header = f"{'path':<30} | {'Argument':<20} | {'Units':<8} | {'Min':<6} | {'Max':<6} | {'Default':<8} | {'required':<9} | {'sample values':<30} | {'Proposal'}"
         print(header)
         print("-" * len(header))
 
@@ -65,10 +66,10 @@ def analyze_md(filename):
                     print("-" * len(header))
                 current_path = entry['path']
                 # Print path row
-                print(f"{entry['path']:<30} | {'':<20} | {'':<8} | {'':<6} | {'':<6} | {'':<8} | {'':<9} |")
+                print(f"{entry['path']:<30} | {'':<20} | {'':<8} | {'':<6} | {'':<6} | {'':<8} | {'':<9} | {'':<30} |")
             # Print arg row if arg exists
             if entry['arg']:
-                print(f"{'':<30} | {entry['arg']:<20} | {entry['units']:<8} | {entry['min']:<6} | {entry['max']:<6} | {entry['default']:<8} | {entry['required']:<9} | {entry['samples']}")
+                print(f"{'':<30} | {entry['arg']:<20} | {entry['units']:<8} | {entry['min']:<6} | {entry['max']:<6} | {entry['default']:<8} | {entry['required']:<9} | {entry['samples']:<30} | {entry['proposal']}")
         
         if current_path:
             print("-" * len(header))
