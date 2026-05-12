@@ -187,3 +187,11 @@ This work is licensed under a [Creative Commons Attribution-NoDerivatives 4.0 In
 |  | lat | | | | | | 41.246, 36.292, 37.6364, 29, 21.5468... |
 |  | lng | | | | | | -96.9167, -84.167, -80.729, -106.5, -84.5455... |
 | /ham/HamClock/xray/xray.txt | | | | | | | |
+
+| path | Argument | Units | Min | Max | Default | required | sample values |
+
+| /ham/HamClock/lightning/strikes.pl | | | | | | | |
+|  | lat | DD.ddddd | -90 | 90 | undef |  |
+|  | lon | DD.dddd | -180 | 180 | undef |  | 
+|  | radius | km | 0 | 41000 | 500 | | 
+|  | maxage | s | 0 | server maximum | 900 |  |
