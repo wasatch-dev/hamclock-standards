@@ -189,6 +189,7 @@ This work is licensed under a [Creative Commons Attribution-NoDerivatives 4.0 In
 | /ham/HamClock/xray/xray.txt | | | | | | | |
 
 | path | Argument | Units | Min | Max | Default | required | sample values |
+| :--- | :--- | :--: | :--: | :--: | :--: | :--: | :--- |
 | /ham/HamClock/lightning/strikes.pl | | | | | | | |
 |  | lat | DD.ddddd | -90 | 90 | undef |  | |
 |  | lon | DD.dddd | -180 | 180 | undef |  |  |
