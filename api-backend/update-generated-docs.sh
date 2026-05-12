@@ -19,9 +19,9 @@ python3 md-to-openapi.py api-doc.md hamclock-openapi.yaml
 
 # generate the interactive HTML documentation [hamclock-api-docs.html](hamclock-api-docs.html).
 echo "Generating the interactive OpenAPI HTML documentation ..."
-python3 generate_docs.py
+python3 openapi-to-html.py
 
 # convert MarkDown (MD) to HTML
 echo "Converting MarkDown to HTML ..."
-pandoc api-doc.md -o api-doc.html
+pandoc api-doc.md -so api-doc.html
 

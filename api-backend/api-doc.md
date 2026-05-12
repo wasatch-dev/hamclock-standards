@@ -1,3 +1,13 @@
+---
+header-includes:
+  - |
+    <style>
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    </style>
+---
+
 # API Documentation
 This work is licensed under a [Creative Commons Attribution-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/).
 
